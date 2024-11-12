@@ -1,0 +1,192 @@
+/* General Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+.container-bk {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: url('../../../assets/booking.jpg') no-repeat center center/cover;
+}
+
+.booking-section {
+    padding: 30px 70px;
+    color: white;
+}
+
+.booking-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.left-content,
+.right-content {
+    flex: 1;
+}
+
+.left-content h5 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #000000a6;
+}
+
+.left-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.left-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #000000a6;
+}
+
+.read-more-btn {
+    padding: 10px 30px;
+    border: 1px solid white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: rgb(122, 218, 86);
+    color: #333;
+}
+
+.right-content h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    background-color: rgb(0 0 0 / 43%);
+    color: white;
+    border: 1px solid white;
+    outline: none;
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+textarea.input-field {
+    resize: none;
+    height: 100px;
+}
+
+.book-now-btn {
+    padding: 15px;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.steps-section {
+    text-align: center;
+    padding:100px 0 50px 0;
+}
+
+.steps-header .process-text {
+    color: #76b041;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+    font-size: 16px;
+}
+
+.steps-header h2 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-top: 5px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 30px;
+}
+
+.step-card {
+    background-color: white;
+    border: 1px solid #76b041;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.icon-container {
+    background-color: #76b041;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container img {
+    width: 50%;
+}
+
+.step-card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background-color: #76b041;
+    margin: 10px auto;
+}
+
+.step-card p {
+    color: #7f8c8d;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 10px;
+}

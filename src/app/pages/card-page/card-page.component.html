@@ -1,0 +1,458 @@
+
+<header class="navbar">
+    <div class="logo">
+        <span class="logo-icon">📍</span>
+        <span class="logo-text">Your Travel Partner</span>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a routerLink="/">Home</a></li>
+            <li><a (click)="about()">About</a></li>
+            <li><a (click)="services()">Services</a></li>
+            <li><a (click)="packages()">Packages</a></li>
+            <li class="dropdown">
+                <a>Pages ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a (click)="destination()">Destination</a></li>
+                    <li><a (click)="booking()">Booking</a></li>
+                    <li><a (click)="guides()">Travel Guides</a></li>
+                    <li><a (click)="testimonial()">Testimonial</a></li>
+                    <li><a (click)="footer()">404 Page</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <a href="#" class="register-btn">Bood a Call</a>
+</header> 
+
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Enjoy Your Vacation With Us</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Eg: Thailand">
+            <button>Search</button>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="about-image">
+        <img src="../assets/about.jpg" alt="Tourist Image">
+    </div>
+    <div class="about-content">
+        <h3>━━━ About Us ━━━</h3>
+        <h2>Welcome to <span class="highlight">Your Travel Partner</span></h2>
+        <p>Featuring 3- and 4-night voyages, the ship offers magical days at sea as it sets sail from Singapore.</p>
+        <p>Get ready to experience an enchanting cruise holiday on a grand scale. Brimming with fun and relaxation,
+            world-class entertainment, themed dining experiences and exceptional Guest service, the Disney Adventure is
+            both the journey and the destination.</p>
+        <div class="features">
+            <ul>
+                <li>➤ First Class Flights</li>
+                <li>➤ 5 Star Accommodations</li>
+                <li>➤ 150 Premium City Tours</li>
+            </ul>
+            <ul>
+                <li>➤ Handpicked Hotels</li>
+                <li>➤ Latest Model Vehicles</li>
+                <li>➤ 24/7 Service</li>
+            </ul>
+        </div>
+        <button class="read-more-btn-1">Read More</button>
+    </div>
+</section>
+
+<section class="services-section">
+    <div class="services-header">
+        <h5>━━ SERVICES ━━</h5>
+        <h2>Our Services</h2>
+    </div>
+    <div class="services-container">
+        <div class="service-card">
+            <p>🌍</p>
+            <h3>WorldWide Tours</h3>
+            <p>WorldWide Tours provides unique global travel experiences.</p>
+        </div>
+        <div class="service-card">
+            <p>🏨</p>
+            <h3>Hotel Reservation</h3>
+            <p>Effortless hotel reservation for your perfect stay always.</p>
+        </div>
+        <div class="service-card">
+            <p>👤</p>
+            <h3>Travel Guides</h3>
+            <p>Comprehensive travel guides offer expert insights and tips for exploring new destinations.</p>
+        </div>
+        <div class="service-card">
+            <p>📅</p>
+            <h3>Event Management</h3>
+            <p>Event management specializes in planning and executing memorable experiences.</p>
+        </div>
+    </div>
+</section>
+
+<section class="popular-destinations">
+    <div class="section-title">
+        <span class="highlight">━━ DESTINATION ━━</span>
+        <h3>Popular Destination</h3>
+    </div>
+    <div class="container">
+        <div class="left-container">
+            <div class="large-image">
+                <div class="discount">30% OFF</div>
+                <img src="../assets/destination-1.jpg" alt="Bali">
+                <span class="destination-name">Bali</span>
+            </div>
+            <div class="small-images">
+                <div class="small-image">
+                    <div class="discount">25% OFF</div>
+                    <img src="../assets/destination-2.jpg" alt="Malaysia">
+                    <span class="destination-name">Malaysia</span>
+                </div>
+                <div class="small-image">
+                    <div class="discount">35% OFF</div>
+                    <img src="../assets/destination-3.jpg" alt="Australia">
+                    <span class="destination-name">Australia</span>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="large-right-image">
+                <div class="discount">20% OFF</div>
+                <img src="../assets/destination-4.jpg" alt="Indonesia">
+                <span class="destination-name">Indonesia</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="packages-section">
+    <h2 class="section-title"> <span class="highlight">━━ PACKAGES ━━</span><br> Awesome Packages </h2>
+    <div class="packages-container">
+        <div class="package-card">
+            <div class="package-image">
+                <img src="../assets/package-1.jpg" alt="Bali Package">
+            </div>
+            <div class="package-info">
+                <div class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="undefined">
+                        <path
+                            d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                    </svg>
+                    <span>Bali</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="undefined">
+                        <path
+                            d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
+                    </svg>
+                    <span>3 days</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="undefined">
+                        <path
+                            d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z" />
+                    </svg>
+                    <span>2 Person</span>
+                </div>
+                <h3 class="price">$349.00</h3>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+                <p class="description">Bali is a vibrant destination known for its stunning beaches, rich culture, and
+                    delicious cuisine.</p>
+                <div class="buttons">
+                    <button class="read-more">Read More</button>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="package-card">
+            <div class="package-image">
+                <img src="../assets/package-2.jpg" alt="Indonesia Package">
+            </div>
+            <div class="package-info">
+                <div class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="undefined">
+                        <path
+                            d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                    </svg>
+                    <span>Indonesia</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="undefined">
+                        <path
+                            d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
+                    </svg>
+                    <span>3 days</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="undefined">
+                        <path
+                            d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z" />
+                    </svg>
+                    <span>2 Person</span>
+                </div>
+                <h3 class="price">$299.00</h3>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+                <p class="description">Indonesia is an archipelago renowned for its diverse landscapes and rich cultural
+                    heritage.</p>
+                <div class="buttons">
+                    <button class="read-more">Read More</button>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="package-card">
+            <div class="package-image">
+                <img src="../assets/package-3.jpg" alt="Malaysia Package">
+            </div>
+            <div class="package-info">
+                <div class="location">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="undefined">
+                        <path
+                            d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                    </svg>
+                    <span>Malaysia</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="undefined">
+                        <path
+                            d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Z" />
+                    </svg>
+                    <span>3 days</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="undefined">
+                        <path
+                            d="M0-240v-63q0-43 44-70t116-27q13 0 25 .5t23 2.5q-14 21-21 44t-7 48v65H0Zm240 0v-65q0-32 17.5-58.5T307-410q32-20 76.5-30t96.5-10q53 0 97.5 10t76.5 30q32 20 49 46.5t17 58.5v65H240Zm540 0v-65q0-26-6.5-49T754-397q11-2 22.5-2.5t23.5-.5q72 0 116 26.5t44 70.5v63H780Zm-455-80h311q-10-20-55.5-35T480-370q-55 0-100.5 15T325-320ZM160-440q-33 0-56.5-23.5T80-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T160-440Zm640 0q-33 0-56.5-23.5T720-520q0-34 23.5-57t56.5-23q34 0 57 23t23 57q0 33-23 56.5T800-440Zm-320-40q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-600q0 50-34.5 85T480-480Zm0-80q17 0 28.5-11.5T520-600q0-17-11.5-28.5T480-640q-17 0-28.5 11.5T440-600q0 17 11.5 28.5T480-560Zm1 240Zm-1-280Z" />
+                    </svg>
+                    <span>2 Person</span>
+                </div>
+                <h3 class="price">$249.00</h3>
+                <div class="rating">
+                    <span>★★★★★</span>
+                </div>
+                <p class="description">Malaysia is a multicultural nation celebrated for its lush rainforests and
+                    vibrant cities.</p>
+                <div class="buttons">
+                    <button class="read-more">Read More</button>
+                    <button class="book-now">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="steps-section">
+    <div class="steps-header">
+        <span class="process-text">━━ PROCESS ━━</span>
+        <h2>3 Easy Steps</h2>
+    </div>
+
+    <div class="steps-container">
+        <div class="step-card">
+            <div class="icon-container">
+                <img src="../assets/globe.png" alt="Globe Icon" />
+            </div>
+            <h3>Choose A Destination</h3>
+            <div class="divider"></div>
+            <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet
+                lorem sit</p>
+        </div>
+
+        <div class="step-card">
+            <div class="icon-container">
+                <img src="../assets/dollar.png" alt="Dollor Icon" />
+            </div>
+            <h3>Pay Online</h3>
+            <div class="divider"></div>
+            <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet
+                lorem sit</p>
+        </div>
+
+        <div class="step-card">
+            <div class="icon-container">
+                <img src="../assets/airplane.png" alt="Airplane Icon" />
+            </div>
+            <h3>Fly Today</h3>
+            <div class="divider"></div>
+            <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet
+                lorem sit</p>
+        </div>
+    </div>
+</section>
+
+<section class="booking-section">
+    <div class="container-bk">
+        <div class="booking-content">
+            <div class="left-content">
+                <h5>BOOKING</h5>
+                <h2>Online Booking</h2>
+                <p>Online booking offers a convenient way to reserve services and experiences anytime, anywhere.</p>
+                <p>Online booking provides a seamless platform to reserve hotels, flights, events, and more with just a
+                    few clicks. It ensures convenience, flexibility, and instant confirmations for a hassle-free
+                    experience.</p>
+                <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="right-content">
+                <h2>Book A Tour</h2>
+                <form action="#">
+                    <div class="input-row">
+                        <input type="text" placeholder="Your Name" class="input-field">
+                        <input type="email" placeholder="Your Email" class="input-field">
+                    </div>
+                    <div class="input-row">
+                        <input type="date" placeholder="Date & Time" class="input-field">
+                        <select class="input-field">
+                            <option>Select</option>
+                            <option>Bali</option>
+                            <option>Indonesia</option>
+                            <option>Malaysia</option>
+                        </select>
+                    </div>
+                    <textarea placeholder="Special Request" class="input-field"></textarea>
+                    <button type="submit" class="book-now-btn">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial-section">
+    <div class="testimonial-header">
+        <span class="testimonial-title">━━ TESTIMONIAL ━━</span>
+        <h2>Our Clients Say!!!</h2>
+    </div>
+
+    <div class="testimonial-container">
+        <div class="review-card">
+            <h3>Suriya Prakash</h3>
+            <p class="location">Malayasia</p>
+            <p class="review-text">
+                Your Travel Partner made booking my honeymoon a breeze with great deals and excellent customer support!
+            </p>
+        </div>
+
+        <div class="review-card">
+            <h3>Kishore</h3>
+            <p class="location">Indonesia</p>
+            <p class="review-text">
+                My Bali trip was mostly smooth with Your Travel Partner, but I faced a slight issue with the airport
+                transfer that was resolved quickly.
+            </p>
+        </div>
+
+        <div class="review-card">
+            <h3>Sarayu Shanmugam</h3>
+            <p class="location">Bali</p>
+            <p class="review-text">
+                While Your Travel Partner offered a straightforward booking process for my Thailand vacation, I
+                encountered delays during check-in.
+            </p>
+        </div>
+
+        <div class="review-card">
+            <h3>Dorthy Shaji</h3>
+            <p class="location">Australia</p>
+            <p class="review-text">
+                Planning my solo trip to Europe was effortless with Your Travel Partner, thanks to their clear
+                itineraries and responsive customer service!
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">FAQs & Help</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <div>
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" width="20" height="20"
+                        fill="currentColor">
+                        <path
+                            d="M480 936q-138-113-207-217t-69-191q0-117 78.5-195.5T480 254q109 0 187.5 78.5T746 528q0 77-69 191T480 936Zm0-424q29 0 49.5-20.5T550 442q0-29-20.5-49.5T480 372q-29 0-49.5 20.5T410 442q0 29 20.5 49.5T480 512Z" />
+                    </svg>
+                </span>
+                <p class="address">OMR Street, Chennai, Tamil Nadu, India</p>
+            </div>
+
+            <div>
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                        fill="currentColor" id="call">
+                        <path
+                            d="M19.44,13c-.22,0-.45-.07-.67-.12a9.44,9.44,0,0,1-1.31-.39,2,2,0,0,0-2.48,1l-.22.45a12.18,12.18,0,0,1-2.66-2,12.18,12.18,0,0,1-2-2.66L10.52,9a2,2,0,0,0,1-2.48,10.33,10.33,0,0,1-.39-1.31c-.05-.22-.09-.45-.12-.68a3,3,0,0,0-3-2.49h-3a3,3,0,0,0-3,3.41A19,19,0,0,0,18.53,21.91l.38,0a3,3,0,0,0,2-.76,3,3,0,0,0,1-2.25v-3A3,3,0,0,0,19.44,13Zm.5,6a1,1,0,0,1-.34.75,1.05,1.05,0,0,1-.82.25A17,17,0,0,1,4.07,5.22a1.09,1.09,0,0,1,.25-.82,1,1,0,0,1,.75-.34h3a1,1,0,0,1,1,.79q.06.41.15.81a11.12,11.12,0,0,0,.46,1.55l-1.4.65a1,1,0,0,0-.49,1.33,14.49,14.49,0,0,0,7,7,1,1,0,0,0,.76,0,1,1,0,0,0,.57-.52l.62-1.4a13.69,13.69,0,0,0,1.58.46q.4.09.81.15a1,1,0,0,1,.79,1Z">
+                        </path>
+                    </svg>
+                </span>
+                <p class="phone-number">+91 123 456 7890</p>
+            </div>
+
+            <div>
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                        fill="currentColor" id="mail">
+                        <path
+                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2l-8 5-8-5h16zm-8 7L4 8v10h16V8l-8 5z" />
+                    </svg>
+                </span>
+                <p class="email">{{ 'yourtravelpartner@gmail.com' }}</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://x.com/" class="social-icon" target="_blank"><img src="../assets/twitter.png"
+                        alt="Twitter"></a>
+                <a href="https://facebook.com/" class="social-icon" target="_blank"><img src="../assets/facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://youtube.com/" class="social-icon" target="_blank"><img src="../assets/youtube.png"
+                        alt="YouTube"></a>
+                <a href="https://linkedin.com/" class="social-icon" target="_blank"><img src="../assets/linkedin.png"
+                        alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Gallery</h3>
+            <div class="gallery">
+                <img src="../assets/package-1.jpg" alt="Gallery Image 1">
+                <img src="../assets/package-2.jpg" alt="Gallery Image 2">
+                <img src="../assets/package-3.jpg" alt="Gallery Image 3">
+                <img src="../assets/package-2.jpg" alt="Gallery Image 4">
+                <img src="../assets/package-3.jpg" alt="Gallery Image 5">
+                <img src="../assets/package-1.jpg" alt="Gallery Image 6">
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Quick Updates</h3>
+            <p>Please signup for quicker response.</p>
+            <div class="newsletter">
+                <input type="email" placeholder="Your email">
+                <button>SignUp</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© Your Travel Partner, All Rights Reserved. Designed By <a href="#">Raja Venkatesan</a></p>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Cookies</a>
+            <a href="#">Help</a>
+            <a href="#">FAQs</a>
+        </div>
+    </div>
+</footer>

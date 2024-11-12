@@ -1,0 +1,136 @@
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 15px 50px; */
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #a1e307;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logo-icon {
+    margin-right: 8px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 19px;
+    position: relative;
+    /* To position the pseudo-element */
+    padding-bottom: 5px;
+    /* Adds space for the underline */
+    transition: color 0.3s ease;
+}
+
+.nav-links li {
+    position: relative;
+    cursor: pointer;
+    /* To position the dropdown */
+}
+
+/* Green underline effect */
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Aligns the line directly under the text */
+    height: 2px;
+    background-color: #a1e307;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+/* On hover, underline expands */
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Keep the underline for the active link */
+.nav-links .active::after {
+    width: 100%;
+}
+
+.nav-links .active {
+    border-bottom: 2px solid #a1e307;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: white;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 10;
+    min-width: 180px;
+}
+
+/* Each dropdown item */
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.dropdown {
+    padding: 0 0 13px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #a1e307;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links .active::after {
+    width: 100%;
+}
+
+.register-btn {
+    background-color: #a1e307;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}

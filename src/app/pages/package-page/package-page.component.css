@@ -1,0 +1,114 @@
+/* General Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+.packages-section {
+    text-align: center;
+    padding: 100px 0 50px 0;;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #333;
+}
+
+.section-title .highlight {
+    color: #a1e307;
+    font-weight: bold;
+}
+
+.packages-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+}
+
+.package-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.package-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.location span {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    color: #88b04b;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.rating {
+    font-size: 16px;
+    color: #88b04b;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.read-more,
+.book-now {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.read-more {
+    background-color: #88b04b;
+    color: white;
+}
+
+.book-now {
+    background-color: #333;
+    color: white;
+}
+
+.read-more:hover, .book-now:hover {
+    opacity: 0.8;
+}
